@@ -1,0 +1,6 @@
+# START IPv6 footer boiler plate
+-A INPUT -j REJECT --reject-with icmp6-port-unreachable
+-A FORWARD -j REJECT --reject-with icmp6-port-unreachable
+COMMIT
+# END IPv6 footer boiler plate
+

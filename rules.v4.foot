@@ -1,0 +1,6 @@
+# START IPv4 footer boiler plate
+-A INPUT -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -j REJECT --reject-with icmp-port-unreachable
+COMMIT
+# END IPv4 footer boiler plate
+
